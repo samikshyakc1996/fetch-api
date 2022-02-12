@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <section class="content">
+      <h2>BMR</h2>
+      <p class="text">
+        Basal Metabolic Rate is the number of calories required to keep your
+        body functioning at rest.<br />
+        Your BMR can be used to help you gain, lose, or maintain your weight. By
+        knowing how many calories you burn, you can know how many to consume.
+      </p>
+      <h2>BMI</h2>
+      <p class="text">
+        Body mass index (BMI) is a measure of body fat based on height and
+        weight that applies to adult men and women.<br />
+        A reliable way to determine whether a person has too much body fat is to
+        calculate the ratio of their weight to their height squared. This ratio,
+        called the body mass index (BMI).
+      </p>
+    </section>
+    <main>
+      <header>
+        <h1>BMR-BMI</h1>
+      </header>
+
+      <form id="calcBMR" class="calc-bmrbmi">
+        <section class="form-control">
+          <label for="age">Age</label>
+          <input type="number" id="age" placeholder="Enter your age" required />
+        </section>
+        <section class="form-control" id="gender">
+          <label for="gender">Gender:</label>
+          <input type="radio" id="gender-male" name="gender" value="male" />
+          <label for="gender-male">Male</label>
+          <input type="radio" id="gender-female" name="gender" value="female" />
+          <label for="gender-female">Female</label>
+        </section>
+        <section class="form-control">
+          <label for="height">Height</label>
+          <input
+            type="float"
+            id="height"
+            placeholder="Enter in centimeters"
+            required
+          />
+        </section>
+        <section class="form-control">
+          <label for="weight">Weight</label>
+          <input type="float" id="weight" placeholder="Enter in Kgs" required />
+        </section>
+        <section>
+          <button
+            type="submit"
+            name="calculateBMR"
+            id="calculateBMR"
+            class="submit-btn"
+          >
+            Submit
+          </button>
+        </section>
+      </form>
+    </main>
+    <section class="output">
+      <label for="resultbmr" id="resultBMR"></label>
+      <label for="resultbmi" id="resultBMI"></label>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
